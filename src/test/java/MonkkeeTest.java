@@ -12,13 +12,15 @@ import java.time.Duration;
 import java.util.UUID;
 
 public class MonkkeeTest {
-    private WebDriver driver;
+    protected WebDriver driver;
 
     @BeforeClass
     public void setup() {
+        System.setProperty("Webdriver.chrome.driver", "C:/Users/user/tms/Monkkee/src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://monkkee.com/app/#/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.get("https://monkkee.com");
     }
 
     @AfterClass
