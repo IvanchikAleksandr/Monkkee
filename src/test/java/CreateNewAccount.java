@@ -19,8 +19,8 @@ public class CreateNewAccount {
     public void testCreateNewAccount() {
         String firstName = "Alex";
         String lastName = "Ivanchik";
-        String email = "test@example.com";
-        String password = "password123";
+        String email = "ivanchikaleksandr11@gmail.com";
+        String password = "alex1111";
 
         // Заполнение полей формы регистрации.
         WebElement firstNameInput = driver.findElement(By.name("first_name"));

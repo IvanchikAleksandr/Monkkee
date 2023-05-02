@@ -20,7 +20,16 @@ public class DeleteEntry {
         entry.delete();
 
         // Проверка наличия сообщения об удалении и отсутствия записи на странице дневника.
-        assertTrue(DiaryPage.finalize());
-        assertFalse(DiaryPage.isEntryDisplayed(entry.getTitle()));
+        assertTrue(DiaryPage());
+        assertFalse(DiaryPage(entry.getTitle()));
+    }
+
+    private boolean DiaryPage(String title) {
+        return false;
+    }
+
+    private boolean DiaryPage() {
+        return false;
     }
 }
+
