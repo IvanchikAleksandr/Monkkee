@@ -6,7 +6,11 @@ import org.testng.annotations.Test;
 import static org.testng.AssertJUnit.assertEquals;
 
 public class CreateNewEntry {
-    private SearchContext driver;
+    private final SearchContext driver;
+
+    public CreateNewEntry(SearchContext driver) {
+        this.driver = driver;
+    }
 
     @Test
     public void testCreateNewEntry() {

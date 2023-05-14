@@ -5,10 +5,10 @@ import static org.testng.AssertJUnit.assertTrue;
 
 public class DeleteEntry {
 
-    private Object DiaryPage;
+    private final Object object;
 
     public DeleteEntry(Object diaryPage) {
-        DiaryPage = diaryPage;
+        this.object = diaryPage;
     }
 
     @Test

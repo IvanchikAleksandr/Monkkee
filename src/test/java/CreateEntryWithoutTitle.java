@@ -1,6 +1,5 @@
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
-
-import static org.testng.AssertJUnit.assertTrue;
 
 public class CreateEntryWithoutTitle {
     @Test
@@ -9,6 +8,6 @@ public class CreateEntryWithoutTitle {
         DiaryEntry entry = new DiaryEntry("", "Содержание записи");
 
         // Проверка отображения ошибки.
-        assertTrue(entry.isErrorDisplayed());
+        AssertJUnit.assertTrue(entry.isErrorDisplayed());
     }
 }

@@ -11,6 +11,10 @@ public class CreateNewAccauntWithoutRequiredFields {
 
     private SearchContext driver;
 
+    public CreateNewAccauntWithoutRequiredFields(SearchContext driver) {
+        this.driver = driver;
+    }
+
     @Test
     public void testCreateNewAccountWithoutRequiredFields() {
         // Нажатие на кнопку "Create Account".
@@ -25,4 +29,5 @@ public class CreateNewAccauntWithoutRequiredFields {
         List<WebElement> errorMessages = driver.findElements(By.cssSelector(".is-invalid"));
         assertTrue(errorMessages.size() > 0);
     }
+
 }

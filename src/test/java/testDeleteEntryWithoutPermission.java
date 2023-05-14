@@ -1,6 +1,6 @@
+import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
-
-import static org.testng.AssertJUnit.assertTrue;
 
 public class testDeleteEntryWithoutPermission {
 
@@ -13,6 +13,6 @@ public class testDeleteEntryWithoutPermission {
         entry.delete();
 
         // Проверка отображения ошибки.
-        assertTrue(entry.isErrorDisplayed());
+        Assert.assertTrue(entry.isErrorDisplayed());
     }
 }
