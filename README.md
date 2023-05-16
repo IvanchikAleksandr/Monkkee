@@ -21,6 +21,7 @@ https://my.monkkee.com
 # **стек технологий**
 Maven
 TestNG
+JUnit
 Selenium
 Allure Reporting
 

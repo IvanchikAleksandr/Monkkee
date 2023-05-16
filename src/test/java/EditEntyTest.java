@@ -1,16 +1,17 @@
+import Page.DiaryEntry;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class EditEnty {
+public class EditEntyTest extends BaseTest {
     @Test
-    public void testEditEntry() {
+    public void EditEntry() {
         // Создание экземпляра класса, содержащего запись в дневнике.
-        DiaryEntry entry = new DiaryEntry("Заголовок записи", "Содержание записи");
+        DiaryEntry entry = new DiaryEntry();
 
         // Редактирование заголовка и содержания записи.
-        entry.setTitle("Новый заголовок");
-        entry.setContent("Новое содержание");
+        entry.setTitle();
+        entry.setContent();
 
         // Проверка успешности редактирования записи.
         assertEquals("Новый заголовок", entry.getTitle());

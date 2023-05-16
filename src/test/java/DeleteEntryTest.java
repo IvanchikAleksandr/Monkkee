@@ -1,20 +1,21 @@
+import Page.DiaryEntry;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertFalse;
 import static org.testng.AssertJUnit.assertTrue;
 
-public class DeleteEntry {
+public class DeleteEntryTest extends BaseTest {
 
-    private final Object object;
 
-    public DeleteEntry(Object diaryPage) {
+
+    public DeleteEntryTest(Object diaryPage) {
         this.object = diaryPage;
     }
 
     @Test
     public void testDeleteEntry() {
         // Создание экземпляра класса, содержащего запись в дневнике.
-        DiaryEntry entry = new DiaryEntry("Заголовок записи", "Содержание записи");
+        DiaryEntry entry = new DiaryEntry();
 
         // Удаление записи из дневника.
         entry.delete();
@@ -24,7 +25,7 @@ public class DeleteEntry {
         assertFalse(DiaryPage(entry.getTitle()));
     }
 
-    private boolean DiaryPage(String title) {
+    private boolean DiaryPage(String ignoredTitle) {
         return false;
     }
 

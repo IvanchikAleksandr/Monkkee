@@ -1,16 +1,13 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class CreateNewEntry {
-    private final SearchContext driver;
+public class CreateNewEntryTest extends BaseTest {
 
-    public CreateNewEntry(SearchContext driver) {
-        this.driver = driver;
-    }
+
+
 
     @Test
     public void testCreateNewEntry() {

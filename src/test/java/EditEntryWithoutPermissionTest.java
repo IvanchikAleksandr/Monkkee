@@ -1,16 +1,17 @@
+import Page.DiaryEntry;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertTrue;
 
-public class EditEntryWithoutPermission {
+public class EditEntryWithoutPermissionTest extends BaseTest {
     @Test
-    public void testEditEntryWithoutPermission() {
+    public void EditEntryWithoutPermission() {
         // Создание экземпляра класса, содержащего запись в дневнике без прав для редактирования.
-        DiaryEntry entry = new DiaryEntry("Заголовок записи", "Содержание записи", false);
+        DiaryEntry entry = new DiaryEntry(false);
 
         // Редактирование заголовка и содержания записи.
-        entry.setTitle("Новый заголовок");
-        entry.setContent("Новое содержание");
+        entry.setTitle();
+        entry.setContent();
 
         // Проверка отображения ошибки.
         assertTrue(entry.isErrorDisplayed());

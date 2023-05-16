@@ -1,33 +1,13 @@
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
 import java.util.UUID;
 
-public class MonkkeeTest {
-    protected WebDriver driver;
+public class MonkkeeTest extends BaseTest {
 
-    @BeforeClass
-
-    public void setup() {
-        System.setProperty("Webdriver.chrome.driver", "C:/Users/user/tms/Monkkee/src/test/resources/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.get("https://monkkee.com/app/#/");
-    }
-
-    @AfterClass
-    public void teardown() {
-        driver.quit();
-    }
 
     @Test
     public void loginTest() {

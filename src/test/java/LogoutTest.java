@@ -5,12 +5,12 @@ import java.security.AuthProvider;
 
 import static org.testng.AssertJUnit.assertTrue;
 
-public class Logout {
+public class LogoutTest extends BaseTest {
 
 
-    private AuthProvider UserAccount;
+    private final AuthProvider UserAccount;
 
-    public Logout(AuthProvider userAccount) {
+    public LogoutTest(AuthProvider userAccount) {
         UserAccount = userAccount;
     }
 

@@ -1,13 +1,13 @@
+import Page.DiaryEntry;
 import org.testng.Assert;
-import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
-public class testDeleteEntryWithoutPermission {
+public class DeleteEntryWithoutPermissionTest extends BaseTest {
 
     @Test
-    public void testDeleteEntryWithoutPermission() {
+    public void DeleteEntryWithoutPermission() {
         // Создание экземпляра класса, содержащего запись в дневнике без прав для удаления.
-        DiaryEntry entry = new DiaryEntry("Заголовок записи", "Содержание записи", false);
+        DiaryEntry entry = new DiaryEntry(false);
 
         // Удаление записи из дневника.
         entry.delete();

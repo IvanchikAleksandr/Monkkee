@@ -1,18 +1,17 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
 import java.util.List;
-
 import static org.testng.AssertJUnit.assertTrue;
 
-public class CreateNewAccauntWithoutRequiredFields {
+public class CreateNewAccauntWithoutRequiredFieldsTest extends BaseTest {
 
-    private SearchContext driver;
 
-    public CreateNewAccauntWithoutRequiredFields(SearchContext driver) {
-        this.driver = driver;
+
+    public CreateNewAccauntWithoutRequiredFieldsTest(SearchContext driver) {
+        this.driver = (WebDriver) driver;
     }
 
     @Test
