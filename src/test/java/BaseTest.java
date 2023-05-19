@@ -21,6 +21,7 @@ public class BaseTest {
         driver.get("https://monkkee.com/app/#/");
     }
 
+
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         if (driver != null) {

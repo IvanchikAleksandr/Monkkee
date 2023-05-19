@@ -15,6 +15,6 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        log.info("Webdriver is {}", driver);
+      log.info("Webdriver is {}",driver);
     }
 }
