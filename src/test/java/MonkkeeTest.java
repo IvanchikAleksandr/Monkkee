@@ -1,30 +1,13 @@
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
 import java.util.UUID;
 
-public class MonkkeeTest {
-    private WebDriver driver;
+public class MonkkeeTest extends BaseTest {
 
-    @BeforeClass
-    public void setup() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://monkkee.com/app/#/");
-    }
-
-    @AfterClass
-    public void teardown() {
-        driver.quit();
-    }
 
     @Test
     public void loginTest() {
@@ -32,8 +15,8 @@ public class MonkkeeTest {
         WebElement passwordField = driver.findElement(By.id("password"));
         WebElement loginButton = driver.findElement(By.xpath("//button[contains(text(),'Log in')]"));
 
-        emailField.sendKeys("test@example.com");
-        passwordField.sendKeys("testPassword");
+        emailField.sendKeys("ivanchikaleksandr11@gmail.com");
+        passwordField.sendKeys("alex1111");
         loginButton.click();
 
         WebElement userProfile = driver.findElement(By.xpath("//a[@aria-label='User']"));
@@ -50,11 +33,11 @@ public class MonkkeeTest {
         WebElement confirmPasswordField = driver.findElement(By.id("password-confirm"));
         WebElement signUpSubmitButton = driver.findElement(By.xpath("//button/span[contains(text(),'Sign up')]"));
 
-        String uniqueEmail = "test+" + UUID.randomUUID() + "@example.com";
+        String uniqueEmail = "ivanchikaleksandr11+" + UUID.randomUUID() + "@gmail.com";
 
         emailField.sendKeys(uniqueEmail);
-        passwordField.sendKeys("testPassword");
-        confirmPasswordField.sendKeys("testPassword");
+        passwordField.sendKeys("alex1111");
+        confirmPasswordField.sendKeys("alex1111");
         signUpSubmitButton.click();
 
         WebElement accountActivationHeading = driver.findElement(By.xpath("//h2[contains(text(),'Thanks for signing up!')]"));
