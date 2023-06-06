@@ -1,14 +1,10 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import page.BaseTest;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-    public class CreateNewEntryTest extends BaseTest {
-
-
-
+    public class CreateNewEntryTest {
 
         @Test
         public void testCreateNewEntry() {

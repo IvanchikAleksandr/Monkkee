@@ -1,10 +1,9 @@
-import page.BaseTest;
 import page.DiaryEntry;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertTrue;
 
-public class EditEntryWithoutPermissionTest extends BaseTest {
+public class EditEntryWithoutPermissionTest {
     @Test
     public void EditEntryWithoutPermission() {
         // Создание экземпляра класса, содержащего запись в дневнике без прав для редактирования.

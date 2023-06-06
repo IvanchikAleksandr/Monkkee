@@ -12,7 +12,7 @@ import java.time.Duration;
         protected Object object;
         @BeforeClass
         public static void setup() {
-            System.setProperty("Webdriver.chrome.driver", "C:/Users/user/tms/Monkkee/src/test/resources/chromedriver.exe");
+            System.setProperty("Webdriver.chrome.driver", "C:/Users/user/tms/Monkkee/src/page/resources/chromedriver.exe");
             WebDriver driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

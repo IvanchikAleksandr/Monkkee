@@ -1,12 +1,11 @@
 import org.testng.annotations.Test;
-import page.BaseTest;
 
 import javax.security.auth.login.LoginException;
 import java.security.AuthProvider;
 
 import static org.testng.AssertJUnit.assertTrue;
 
-public class LogoutTest extends BaseTest {
+public class LogoutTest {
 
 
     private final AuthProvider UserAccount;

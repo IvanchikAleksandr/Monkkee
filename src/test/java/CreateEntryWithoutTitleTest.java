@@ -1,8 +1,7 @@
-import page.BaseTest;
 import page.DiaryEntry;
 import org.testng.annotations.Test;
 
-    public class CreateEntryWithoutTitleTest extends BaseTest {
+    public class CreateEntryWithoutTitleTest {
         @Test
         public void CreateEntryWithoutTitle() {
             // Создание новой записи в дневнике без названия.

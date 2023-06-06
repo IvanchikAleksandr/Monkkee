@@ -1,9 +1,8 @@
-import page.BaseTest;
 import page.DiaryEntry;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DeleteEntryWithoutPermissionTest extends BaseTest {
+public class DeleteEntryWithoutPermissionTest {
 
     @Test
     public void DeleteEntryWithoutPermission() {

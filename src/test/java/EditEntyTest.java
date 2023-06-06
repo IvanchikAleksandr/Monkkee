@@ -1,10 +1,9 @@
-import page.BaseTest;
 import page.DiaryEntry;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class EditEntyTest extends BaseTest {
+public class EditEntyTest {
     @Test
     public void EditEntry() {
         // Создание экземпляра класса, содержащего запись в дневнике.

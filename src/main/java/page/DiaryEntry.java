@@ -1,4 +1,4 @@
-package Page;
+package page;
 
 public class DiaryEntry  {
     public DiaryEntry() {
@@ -32,7 +32,4 @@ public class DiaryEntry  {
     public boolean isErrorDisplayed() {
         return false;
     }
-
-
-
 }

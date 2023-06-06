@@ -1,13 +1,12 @@
-import page.BaseTest;
-import page.DiaryEntry;
 import org.testng.annotations.Test;
+import page.DiaryEntry;
 
 import static org.testng.AssertJUnit.assertFalse;
 import static org.testng.AssertJUnit.assertTrue;
 
 
 
-    public class DeleteEntryTest extends BaseTest {
+    public class DeleteEntryTest {
 
 
 
