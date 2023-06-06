@@ -3,17 +3,15 @@ import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import page.BaseTest;
+
 import java.util.List;
 import static org.testng.AssertJUnit.assertTrue;
 
     public class CreateNewAccauntWithoutRequiredFieldsTest extends BaseTest {
-
-
-
         public CreateNewAccauntWithoutRequiredFieldsTest(SearchContext driver) {
             this.driver = (WebDriver) driver;
         }
-
         @Test
         public void testCreateNewAccountWithoutRequiredFields() {
             // Нажатие на кнопку "Create Account".
@@ -30,4 +28,3 @@ import static org.testng.AssertJUnit.assertTrue;
         }
 
     }
-

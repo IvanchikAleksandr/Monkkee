@@ -1,4 +1,5 @@
-import Page.DiaryEntry;
+import page.BaseTest;
+import page.DiaryEntry;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertFalse;

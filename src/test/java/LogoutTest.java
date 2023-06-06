@@ -1,4 +1,5 @@
 import org.testng.annotations.Test;
+import page.BaseTest;
 
 import javax.security.auth.login.LoginException;
 import java.security.AuthProvider;
